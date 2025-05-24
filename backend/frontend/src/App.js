@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { PlusIcon, TrashIcon } from '@heroicons/react/24/outline';
 
-const API_URL = 'https://todo-summary-assistant-i548.onrender.com';
+const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:5000';
 
 function App() {
   const [todos, setTodos] = useState([]);
