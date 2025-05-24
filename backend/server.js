@@ -13,7 +13,7 @@ const port = process.env.PORT || 5000;
 
 // Middleware
 app.use(cors({
-  origin: ['http://localhost:3000', 'http://localhost:5173'], // Allow both common React dev ports
+  origin: ['https://todo-summary-assistant-i548.onrender.com'], // Allow both common React dev ports
   credentials: true
 }));
 app.use(express.json());
