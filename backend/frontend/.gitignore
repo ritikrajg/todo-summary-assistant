@@ -20,7 +20,7 @@ build/
 .vscode/
 
 # Environment variables
-.env
+
 .env.local
 
 # OS files
