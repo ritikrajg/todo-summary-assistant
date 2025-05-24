@@ -4,11 +4,15 @@ const { createClient } = require('@supabase/supabase-js');
 const OpenAI = require('openai');
 const axios = require('axios');
 const path = require('path');
+
+
 require('dotenv').config();
 
 const app = express();
 const port = process.env.PORT || 5000;
-
+app.use(cors({
+  origin: 'https://todo-summary-assistant-i548.onrender.com'  // Replace with your frontend URL
+}));
 // Middleware
 app.use(cors());
 app.use(express.json());
