@@ -13,7 +13,6 @@ jspm_packages/
 .npm
 
 # Build output
-dist/
 build/
 
 # VS Code settings
